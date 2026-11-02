@@ -3,5 +3,5 @@ module 2 : update , alter ,delete ,select , orderBy
 module 3 : function (count,sum,avg,min,max etc)
 module 4 : GroupBY
 module 5 : having Clause
-module 6 ; Conditional Aggregation using case
-
+module 6 : Conditional Aggregation using case
+module 7 : Joins and Union
