@@ -5,3 +5,7 @@ module 4 : GroupBY
 module 5 : having Clause
 module 6 : Conditional Aggregation using case
 module 7 : Joins and Union
+module 8 : SQL Functions (String functions ,Numeric functions NULL handling functions Date and time functions)
+module 9 : Subqueries and nested SQL
+module 10: CTEs and temporary tables
+moduel 11: Window functions and analytical SQL

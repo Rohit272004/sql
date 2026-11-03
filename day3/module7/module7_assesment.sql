@@ -69,3 +69,21 @@ SELECT
 FROM customers INNER JOIN orders ON customers.customer_id = orders.customer_id
 GROUP BY customers.customer_id 
 HAVING COUNT(orders.order_id) > 1;
+
+
+
+ --! Union Assesment
+-- *Write a query using UNION to combine online_customers and offline_customers.
+SELECT customer_id , customer_name from online 
+UNION
+SELECT customer_id , customer_name from offline; 
+ 
+-- *Q2. Write the same query using UNION ALL.
+SELECT customer_id , customer_name from online 
+UNION ALL
+SELECT customer_id , customer_name from offline; 
+
+--*company has 2025_sales and 2026_sales tables with identical columns: sale_id, product_id, amount. Combine both datasets without removing duplicate rows.
+SELECT sale_id ,product_id , amount from 2025_sales
+UNION ALL 
+SELECT sale_id , product_id , amount FROM 2026_sales ;

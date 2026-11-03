@@ -55,3 +55,33 @@ INNER JOIN departments d
     ON e.department_id = d.department_id
 INNER JOIN salaries s
     ON e.employee_id = s.employee_id;
+
+
+--!Union and Union ALL
+SELECT customer_id, name, city
+FROM online_customers
+
+UNION
+
+SELECT customer_id, name, city
+FROM offline_customers;
+
+SELECT customer_id, name, city
+FROM online_customers
+
+UNION ALL
+
+SELECT customer_id, name, city
+FROM offline_customers;
+
+--!Order by along with union
+SELECT customer_id, name
+FROM online_customers
+
+UNION ALL
+
+SELECT customer_id, name
+FROM offline_customers
+
+ORDER BY name; --group records by name 
+
